@@ -1,0 +1,81 @@
+@import "../../variables.scss";
+
+.cart-section {
+
+    &__buy-form {
+        flex: 1 0 30%; 
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+        font-family: $font-secondary;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 50%;
+            align-self: center;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+            align-self: center;
+        }
+    }
+
+    &__buy-heading {
+        margin-bottom: 1rem;
+    }
+
+    &__buy-label {
+        margin-bottom: 1rem;
+    }
+
+    &__buy-content {
+        padding-bottom: 3.2rem;
+        position: relative;
+    }
+
+    &__buy-input {
+        height: 3rem;
+        width: 100%;
+        padding: 0 1rem;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: $color-tertiary;
+        }
+
+        &--invalid {
+            border: 1px solid $color-secondary;
+        }
+    }
+
+
+    &__buy-error {
+        position: absolute;
+        left: 0;
+        bottom: .5rem;
+        color: $color-secondary;
+    }
+
+    &__buy-submit {
+        width: 35%;
+        padding: .5rem 0;
+        cursor: pointer;
+        background-color: $color-primary-white;
+        border: 1px solid $color-primary-dark;
+        align-self: center;
+        transition: all .3s;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $color-primary-white;
+            background-color: $color-secondary;
+            border: 1px solid $color-secondary;
+        }
+    }
+
+
+}

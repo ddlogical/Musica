@@ -1,0 +1,26 @@
+@import '../../variables.scss';
+
+.partners {
+
+    &__content {
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+    }
+
+    &__list {
+        display: flex;
+        padding: 2.9rem 1.9rem 6rem 1.3rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__list-item {
+    
+    }
+
+    &__item-img {
+        width: 100%;
+        height: auto;
+    }
+
+}

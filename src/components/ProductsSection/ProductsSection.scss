@@ -1,0 +1,11 @@
+@import '../../variables.scss';
+
+.products {
+    
+    &__content {
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+        padding-bottom: 5rem;
+        position: relative;
+    }
+}

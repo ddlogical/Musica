@@ -1,0 +1,99 @@
+@import "../../variables.scss";
+
+.navigation {
+    grid-column: 5 / -1;
+    grid-row: 1 / 1;
+    align-self: center;
+    justify-self: end;
+    margin-top: 3rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 3 / -1;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+
+        @media only screen and (max-width: $bp-small) {
+            display: none;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $color-primary-dark;
+        font-weight: 700;
+        transition: all 0.2s;
+
+        &:hover {
+            color: $color-secondary;
+        }
+
+    }
+
+    &__button {
+        height: 3.0rem;
+        width: 3.0rem;
+        border: none;
+        border-radius: 5px;
+        background-color: transparent;
+        position: absolute;
+        top: -1rem;
+        right: 1rem;
+        z-index: 2000;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+
+        @media only screen and (max-width: $bp-small) {
+            display: block;
+        }
+    }
+
+    &__icon {
+        position: relative;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-tertiary;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        &::before {
+            top: -0.8rem;
+        }
+
+        &::after {
+            top: 0.8rem;
+        }
+    }
+
+    &__button:hover &__icon {
+        &::before {
+            top: -1rem;
+        }
+
+        &::after {
+            top: 1rem;
+        }
+    }
+}

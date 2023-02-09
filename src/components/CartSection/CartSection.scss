@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.cart-section {
+    
+    &__content {
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+        padding-bottom: 5rem;
+        min-height: 80vh;
+        padding-top: 3rem;
+    }
+
+    &__cart {
+        display: flex;
+        align-items: flex-start;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
+
+    }
+
+    &__no-items {
+        flex: 1 70%;
+        @include center-content;
+        font-size: 2rem;
+    }
+}

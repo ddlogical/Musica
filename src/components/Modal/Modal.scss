@@ -1,0 +1,98 @@
+@import '../../variables.scss';
+
+.modal {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: rgba($color-primary-dark, 0.95);
+    z-index: 1000;
+
+    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-primary-dark, .6);
+    }
+
+    &-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $color-primary-white;
+        font-family: 'HelveticaNeue';
+        color: $color-primary-dark;
+        border-radius: 3px;
+        width: 39%;
+        height: 25.5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 80%;
+        }  
+    }
+
+    &-top {
+        background-color: $color-secondary;
+        color: $color-primary-white;
+        font-size: 1.8rem;
+        line-height: 0;
+        padding: 3rem 0 2.1rem 3rem;
+    }
+
+    &-bottom {
+        text-align: center;
+        padding: 4rem 4rem 2rem 4rem;
+    }
+
+    &-header {
+        font-weight: 700;
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+
+    &-text {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    &-button-container {
+        margin-top: 2.8rem;
+        display: flex;
+        justify-content: center;
+        gap: 0 2.5rem;
+    }
+
+    &-close-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+
+        &::before,
+        &::after {
+            content: "";
+            height: 2.5rem;
+            display: block;
+            width: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 0rem;
+        }
+
+        &::before {
+            right: 1rem;
+            transform: rotate(135deg);
+        }
+
+        &::after {
+            right: 1rem;
+            transform: rotate(-135deg);
+        }
+    }
+
+    
+}

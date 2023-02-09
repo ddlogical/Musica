@@ -1,0 +1,49 @@
+@import '../../variables.scss';
+
+.carousel-section {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    background-color: $color-primary-dark;
+}
+
+.carousel.carousel-slider .control-arrow {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: $color-primary-dark;
+    color: $color-primary-white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel.carousel-slider .control-prev {
+    left: 7%;
+
+    &::before {
+        content: "\003c";
+        font-family: $font-secondary;
+        font-weight: 200;
+        font-size: 4rem;
+        line-height: 0.5;
+        border: none;
+    }
+}
+
+.carousel.carousel-slider .control-next {
+    right: 3%;
+
+    &::before {
+        content: "\003e";
+        font-family: $font-secondary;
+        font-weight: 200;
+        font-size: 4rem;
+        line-height: 0.5;
+        border: none;
+    }
+}
+
+.carousel-section__img {
+    object-fit: cover;
+}
+

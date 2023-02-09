@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Oh my Deer",
+        "text": "Lorem ipsum dolor sit amet",
+        "productCode": "000100201", 
+        "imgSrc": "img/album-1.png",
+        "color": "#1e1e20",
+        "price": "$14.99"
+    },
+    {
+        "name": "Cryptonite",
+        "text": "Quo quaerat hic velit dicta obcaecati",
+        "productCode": "000100202", 
+        "imgSrc": "img/album-2.png",
+        "color": "#1e1e20",
+        "price": "$17.59"
+    },
+    {
+        "name": "Time TLVLR",
+        "text": "Lorem ipsum dolor sit amet",
+        "productCode": "000100203", 
+        "imgSrc": "img/album-3.png",
+        "color": "#1e1e20",
+        "price": "$13.55"
+    },
+    {
+        "name": "Back from the Grave",
+        "text": "Lorem ipsum dolor ipsum ipsum",
+        "productCode": "000100204", 
+        "imgSrc": "img/album-4.png",
+        "color": "#cc3333",
+        "price": "$8.99"
+    },
+    {
+        "name": "The film sessions",
+        "text": "Lorem facilis accusantium odio amet",
+        "productCode": "000100205", 
+        "imgSrc": "img/album-5.png",
+        "color": "#1e1e20",
+        "price": "$15.39"
+    },
+    {
+        "name": "Strange to ears",
+        "text": "Lorem ipsum dolor sit amet",
+        "productCode": "000100206", 
+        "imgSrc": "img/album-6.png",
+        "color": "#1e1e20",
+        "price": "$13.34"
+    },
+    {
+        "name": "Caribou",
+        "text": "Lorem officia quo quaerat hic",
+        "productCode": "000100207", 
+        "imgSrc": "img/album-7.png",
+        "color": "#cc3333",
+        "price": "$6.59"
+    },
+    {
+        "name": "Aqualung",
+        "text": "Rerum facilis accusantium odio",
+        "productCode": "000100208", 
+        "imgSrc": "img/album-8.png",
+        "color": "#1e1e20",
+        "price": "$12.99"
+    },
+    {
+        "name": "Awaken the Hero",
+        "text": "Lorem ipsum dolor sit amet",
+        "productCode": "000100209", 
+        "imgSrc": "img/album-9.png",
+        "color": "#1e1e20",
+        "price": "$14.99"
+    },
+    {
+        "name": "Bad dreams",
+        "text": "Sit, amet consectetur adipisicing elit",
+        "productCode": "000100210", 
+        "imgSrc": "img/album-10.png",
+        "color": "#1e1e20",
+        "price": "$22.99"
+    },
+    {
+        "name": "Caribou",
+        "text": "Lorem officia quo quaerat hic",
+        "productCode": "000100211", 
+        "imgSrc": "img/album-7.png",
+        "color": "#cc3333",
+        "price": "$6.59"
+    },
+    {
+        "name": "The film sessions",
+        "text": "Lorem facilis accusantium odio amet",
+        "productCode": "000100212", 
+        "imgSrc": "img/album-5.png",
+        "color": "#1e1e20",
+        "price": "$15.39"
+    }
+]

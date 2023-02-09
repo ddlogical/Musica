@@ -1,0 +1,18 @@
+@import '../../variables.scss';
+
+.cart-section {
+
+    &__list {
+        flex: 1 1 70%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr)); /* see notes below */
+        grid-gap: 1.3rem;
+        margin-top: 2rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: 1 1 100%;
+            align-self: center;
+        }
+    }
+
+}

@@ -1,0 +1,45 @@
+@import '../../variables.scss';
+
+.products {
+
+    &__show-switcher {
+        position: absolute;
+        top: 0;
+        right: .5rem;
+    }
+
+    &__show-btn {
+        font-family: $font-secondary;
+        font-size: 1.5rem;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid $color-primary-dark;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-secondary;
+            color: $color-primary-white;
+        }
+
+        &--list {
+            padding: .2rem 1.5rem;
+            margin-right: .5rem;
+        }
+
+        &--table {
+            padding: .2rem 1rem;
+        }
+
+    }
+
+    &__show-btn:disabled {
+        color: $color-tertiary-light;
+        border: 1px solid $color-tertiary-light;
+
+        &:hover {
+            background-color: transparent;
+            color: $color-tertiary-light;
+        }
+    }
+
+}

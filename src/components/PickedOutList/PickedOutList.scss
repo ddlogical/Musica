@@ -1,0 +1,12 @@
+@import '../../variables.scss';
+
+.picked-out-section {
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr)); /* see notes below */
+        grid-gap: 1.3rem;
+        margin-top: 2rem;
+    }
+
+}
