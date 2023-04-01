@@ -1,11 +1,11 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from 'redux-persist/lib/storage';
-import goodsReduser from "./features/goodsSlice/goodsSlice";
-import modalVisibleReducer from "./features/modalVisibleSlice/modalVisibleSlice";
-import cartReducer from "./features/cartSlice/cartSlice";
-import pickedOutReducer from "./features/pickedOutSlice/pickedOutSlice";
-import activeProductReducer from "./features/activeProductSlice/activeProductSlice";
+import goodsReduser from "./goodsSlice/goodsSlice";
+import modalVisibleReducer from "./modalVisibleSlice/modalVisibleSlice";
+import cartReducer from "./cartSlice/cartSlice";
+import pickedOutReducer from "./pickedOutSlice/pickedOutSlice";
+import activeProductReducer from "./activeProductSlice/activeProductSlice";
 
 const storeReducer = combineReducers({
     cart: cartReducer,

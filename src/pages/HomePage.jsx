@@ -13,7 +13,7 @@ function HomePage(props) {
 
                 <CarouselSection />
 
-                <WelcomeSection />
+                <WelcomeSection page="home" text="check out our latest albums" />
 
                 <ProductsSection />
 

@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+
+.player {
+	background-color: white;
+	width: 25%;
+	margin: -2rem auto 3rem;
+	border: 0.1px solid black;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+
+	&__status {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	&__music-img {
+		width: 100%;
+		height: auto;
+		border-radius: 10%;
+	}
+
+	&__music-name {
+		text-align: center;
+	}
+
+	&__music-title {
+		margin-bottom: 1.2rem;
+	}
+
+	&__music-author {
+		font-size: 1.5rem;
+	}
+
+	&__btn-conatiner {
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+		margin-top: 3rem;
+	}
+
+	&__btn {
+		background-color: $color-secondary;
+		border-radius: 50%;
+		border: none;
+		cursor: pointer;
+		transition: all .2s ease-in;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+	 }
+
+	 &__time {
+		margin: 0 auto;
+		width: 80%;
+		display: flex;
+		justify-content: space-between;
+		color: #828282;
+	 }
+
+	 &__time-line {
+		width: 80%;
+		display: block;
+		margin: 1rem auto 0;
+	 }
+ }

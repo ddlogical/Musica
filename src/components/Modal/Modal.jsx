@@ -2,10 +2,10 @@ import './Modal.scss';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 import { shallowEqual, useSelector, useDispatch } from 'react-redux';
-import { modalVisibleChanged } from '../../features/modalVisibleSlice/modalVisibleSlice';
-import { addToCart } from '../../features/cartSlice/cartSlice';
-import { removeFromCart } from '../../features/cartSlice/cartSlice';
-import { activeProductChanged } from '../../features/activeProductSlice/activeProductSlice';
+import { modalVisibleChanged } from '../../store/modalVisibleSlice/modalVisibleSlice';
+import { addToCart } from '../../store/cartSlice/cartSlice';
+import { removeFromCart } from '../../store/cartSlice/cartSlice';
+import { activeProductChanged } from '../../store/activeProductSlice/activeProductSlice';
 import { memo } from 'react';
 
 function Modal(props) {

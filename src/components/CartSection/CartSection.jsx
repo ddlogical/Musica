@@ -1,7 +1,7 @@
 import "./CartSection.scss";
-import CartList from '../CartList';
+import CartList from './CartList';
 import { shallowEqual, useSelector } from "react-redux";
-import BuyForm from "../BuyForm/BuyForm";
+import BuyForm from "./BuyForm/BuyForm";
 import { memo } from 'react';
 
 function CartSection() {
@@ -23,7 +23,7 @@ function CartSection() {
                                 <BuyForm />
                             </div>
                             :
-                            <p className='cart-section__no-items'>No items has been added.</p>
+                            <p className='cart-section__no-items'>No items have been added.</p>
                     }
                 </div>
             </div>

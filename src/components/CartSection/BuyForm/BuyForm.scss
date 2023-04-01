@@ -1,9 +1,9 @@
-@import '../../styles/variables.scss';
+@import '../../../styles/variables.scss';
 
 .cart-section {
 
     &__buy-form {
-        flex: 1 0 30%; 
+        flex: 1 0 50%; 
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
@@ -11,7 +11,8 @@
         font-family: $font-secondary;
 
         @media only screen and (max-width: $bp-medium) {
-            width: 50%;
+            width: 70%;
+				order: 1;
             align-self: center;
         }
 

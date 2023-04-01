@@ -19,7 +19,7 @@ function PickedOutSection() {
                             ?
                             <PickedOutList />
                             :
-                            <p className='picked-out-section__no-items'>No items has been added.</p>
+                            <p className='picked-out-section__no-items'>No items have been added.</p>
                     }
                 </div>
             </div>

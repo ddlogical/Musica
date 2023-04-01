@@ -4,10 +4,10 @@ import Icon from '../Icon';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
-import { modalVisibleChanged } from "../../features/modalVisibleSlice/modalVisibleSlice";
-import { addToPickedOut } from "../../features/pickedOutSlice/pickedOutSlice";
-import { removeFromPickedOut } from "../../features/pickedOutSlice/pickedOutSlice";
-import { activeProductChanged } from "../../features/activeProductSlice/activeProductSlice";
+import { modalVisibleChanged } from "../../store/modalVisibleSlice/modalVisibleSlice";
+import { addToPickedOut } from "../../store/pickedOutSlice/pickedOutSlice";
+import { removeFromPickedOut } from "../../store/pickedOutSlice/pickedOutSlice";
+import { activeProductChanged } from "../../store/activeProductSlice/activeProductSlice";
 import { memo } from 'react';
 
 function Product(props) {
@@ -70,9 +70,9 @@ function Product(props) {
                     <span className='product__price' style={priceCustomStyle}>{price}</span>
                     {!isCart
                         ?
-                        <Button backgroundColor="#1e1e20" padding=".9rem .5rem" text='Add to cart' onClick={clickAddToCartHandler} />
+                        <Button backgroundColor="#1e1e20" padding="9px 5px" text='Add to cart' onClick={clickAddToCartHandler} />
                         :
-                        <Button backgroundColor="#1e1e20" padding=".9rem .8rem" text='Remove' onClick={clickRemoveFromCartHandler} />
+                        <Button backgroundColor="#1e1e20" padding="9px 8px" text='Remove' onClick={clickRemoveFromCartHandler} />
                     }
                 </div>
                 {

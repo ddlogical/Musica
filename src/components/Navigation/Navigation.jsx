@@ -8,11 +8,11 @@ function Navigation() {
 
 	return (
 		<div className='navigation'>
-			<input type="checkbox" class="navigation__checkbox" id="navi-toggle"></input>
-			<label for="navi-toggle" className="navigation__button">
+			<input type="checkbox" className="navigation__checkbox" id="navi-toggle"></input>
+			<label htmlFor="navi-toggle" className="navigation__button">
 				<span className="navigation__icon">&nbsp;</span>
 			</label>
-			<div class="navigation__background">&nbsp;</div>
+			<div className="navigation__background">&nbsp;</div>
 			<nav className='navigation__nav'>
 				<ul className='navigation__list'>
 					<li className='navigation__item'><NavLink to='/shop' className={({ isActive }) => isActive ? "navigation__link navigation__link--active" : "navigation__link"}>Home</NavLink></li>

@@ -2,7 +2,7 @@ import './BuyForm.scss';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
-import { removeAllFromCart } from '../../features/cartSlice/cartSlice';
+import { removeAllFromCart } from '../../../store/cartSlice/cartSlice';
 import { PatternFormat } from "react-number-format";
 import { memo } from 'react';
 
@@ -52,7 +52,6 @@ function BuyForm() {
             initialValues={{
                 firstName: '',
                 lastName: '',
-                age: '',
                 address: '',
                 phoneNumber: ''
             }}
@@ -61,12 +60,6 @@ function BuyForm() {
                     .required('This field is required'),
                 lastName: Yup.string()
                     .required('This field is required'),
-                age: Yup.number()
-                    .required('This field is required')
-                    .positive('Enter valid number')
-                    .integer('Enter valid number')
-                    .min(12, 'Your age must be 12 or bigger')
-                    .max(100, 'Enter valid age'),
                 address: Yup.string()
                     .required('This field is required'),
                 phoneNumber: Yup.string()
@@ -95,13 +88,6 @@ function BuyForm() {
                     name="lastName"
                     type="text"
                     placeholder="Your last name"
-                />
-
-                <TextInput 
-                    label="Enter your age:"
-                    name="age"
-                    type="text"
-                    placeholder="Your age"
                 />
 
                 <TextInput 

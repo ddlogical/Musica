@@ -4,6 +4,7 @@ import ErrorPage from "../pages/ErrorPage";
 import HomePage from "../pages/HomePage";
 import CartRoute from "../pages/CartPage";
 import PickedOutPage from "../pages/PickedOutPage";
+import ListenPage from "../pages/ListenPage";
 
 export const router = createBrowserRouter([
 	{
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
 			  {
 					path: 'picked-out',
 					element: <PickedOutPage />
+			  },
+			  {
+					path: 'listen',
+					element: <ListenPage />
 			  }
 		 ]
 	}

@@ -1,5 +1,5 @@
 import "./CartList.scss";
-import Product from '../Product';
+import Product from '../../Product';
 import { shallowEqual, useSelector } from "react-redux";
 import { memo } from 'react';
 

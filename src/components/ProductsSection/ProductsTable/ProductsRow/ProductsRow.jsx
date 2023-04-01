@@ -4,10 +4,10 @@ import './ProductsRow.scss';
 import Button from '../../../Button/Button';
 import Icon from '../../../Icon';
 import PropTypes from 'prop-types';
-import { addToPickedOut } from "../../../../features/pickedOutSlice/pickedOutSlice";
-import { removeFromPickedOut } from "../../../../features/pickedOutSlice/pickedOutSlice";
-import { modalVisibleChanged } from "../../../../features/modalVisibleSlice/modalVisibleSlice";
-import { activeProductChanged } from "../../../../features/activeProductSlice/activeProductSlice";
+import { addToPickedOut } from "../../../../store/pickedOutSlice/pickedOutSlice";
+import { removeFromPickedOut } from "../../../../store/pickedOutSlice/pickedOutSlice";
+import { modalVisibleChanged } from "../../../../store/modalVisibleSlice/modalVisibleSlice";
+import { activeProductChanged } from "../../../../store/activeProductSlice/activeProductSlice";
 import { memo } from 'react';
 
 function ProductsRow(props) {

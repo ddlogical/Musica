@@ -23,6 +23,14 @@ function Icon(props) {
             return (<svg xmlns="http://www.w3.org/2000/svg" fill={color} height="20" width="20"><path d="M2.854 16.083V4.125q0-.542.365-.917.364-.375.906-.375h11.75q.542 0 .906.375.365.375.365.917v8.417q0 .541-.365.906-.364.364-.906.364H5.125Z" /></svg>);
         case 'arrow':
             return (<svg xmlns="http://www.w3.org/2000/svg" fill={color} height="20" width="20"><path d="m6.062 12.438-.479-.48L10 7.521l4.417 4.437-.479.48L10 8.5Z" /></svg>);
+        case 'play':
+            return (<svg xmlns="http://www.w3.org/2000/svg" fill={color} height="40" viewBox="0 96 960 960" width="40"><path d="M340.001 818.356V330.669l383.073 243.844-383.073 243.843Zm50.255-243.843Zm0 152 239.59-152-239.59-152v304Z"/></svg>);
+        case 'pause':
+            return (<svg xmlns="http://www.w3.org/2000/svg" fill={color} height="40" viewBox="0 96 960 960" width="40"><path d="M532.565 835.999V316.001h207.434v519.998H532.565Zm-312.564 0V316.001h207.691v519.998H220.001Zm362.819-50.255h106.924V366.256H582.82v419.488Zm-312.564 0h107.181V366.256H270.256v419.488Z"/></svg>);
+        case 'prev':
+            return (<svg xmlns="http://www.w3.org/2000/svg" fill={color} height="40" viewBox="0 96 960 960" width="40"><path d="M244.617 788.306V363.694h50.255v424.612h-50.255Zm470.766 0L403.694 576l311.689-212.306v424.612ZM665.128 576Zm0 116.924V458.82L492.717 576l172.411 116.924Z"/></svg>);
+        case 'next':
+            return (<svg xmlns="http://www.w3.org/2000/svg" fill={color} height="40" viewBox="0 96 960 960" width="40"><path d="M665.128 788.306V363.694h50.255v424.612h-50.255Zm-420.511 0V363.694L556.306 576 244.617 788.306ZM294.872 576Zm0 116.924L467.54 576 294.872 458.82v234.104Z"/></svg>);
         default:
             return null
     }

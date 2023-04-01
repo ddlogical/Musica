@@ -1,29 +1,30 @@
-@import '../../styles/variables.scss';
-@import '../../styles/mixins.scss';
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 
 .cart-section {
-    
-    &__content {
-        grid-column: 1 / -1;
-        grid-row: 1 / 1;
-        padding-bottom: 5rem;
-        min-height: 80vh;
-        padding-top: 3rem;
-    }
+	&__content {
+		grid-column: 1 / -1;
+		grid-row: 1 / 1;
+		padding-bottom: 5rem;
+		min-height: 80vh;
+		padding-top: 3rem;
+	}
 
-    &__cart {
-        display: flex;
-        align-items: flex-start;
+	&__cart {
+		display: flex;
+		align-items: flex-start;
 
-        @media only screen and (max-width: $bp-medium) {
-            flex-direction: column;
-        }
+		@media only screen and (max-width: $bp-medium) {
+			flex-direction: column;
+		}
+	}
 
-    }
-
-    &__no-items {
-        flex: 1 70%;
-        @include center-content;
-        font-size: 2rem;
-    }
+	&__no-items {
+		flex: 1 70%;
+		@include center-content;
+		font-size: 3rem;
+		@media only screen and (max-width: $bp-small) {
+			font-size: 2rem;
+		}
+	}
 }
