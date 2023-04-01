@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import '../../styles/variables.scss';
 
 .modal {
     position: fixed;
@@ -7,7 +7,7 @@
     top: 0;
     height: 100vh;
     background-color: rgba($color-primary-dark, 0.95);
-    z-index: 1000;
+    z-index: 4000;
 
     @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
         -webkit-backdrop-filter: blur(10px);

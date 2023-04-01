@@ -1,6 +1,6 @@
 import "./Footer.scss";
-import FooterTop from '../FooterTop/FooterTop';
-import FooterBottom from '../FooterBottom';
+import FooterTop from './FooterTop';
+import FooterBottom from './FooterBottom';
 import Icon from '../Icon/Icon';
 import { memo } from 'react';
 

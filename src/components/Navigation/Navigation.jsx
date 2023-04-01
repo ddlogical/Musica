@@ -1,23 +1,28 @@
+import { NavLink } from "react-router-dom";
 import "./Navigation.scss";
-import { Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import NavigationList from "./NavigationList";
 import { memo } from 'react';
 
 function Navigation() {
 
-
-    return (
-        <nav className='navigation'>
-            <ul className='navigation__list'>
-                <li className='navigation__item'><Link to='/shop' className='navigation__link' href="#">Home</Link></li>
-                <li className='navigation__item'><Link to='/cart' className='navigation__link' href="#">Cart</Link></li>
-                <li className='navigation__item'><Link to='/picked-out' className='navigation__link' href="#">Picked Out</Link></li>
-                <li className='navigation__item'><Link to='/shop' className='navigation__link' href="#">Contact us</Link></li>
-            </ul>
-            <button className="navigation__button">
-                <span className="navigation__icon">&nbsp;</span>
-            </button>
-        </nav>
-    );
+	return (
+		<div className='navigation'>
+			<input type="checkbox" class="navigation__checkbox" id="navi-toggle"></input>
+			<label for="navi-toggle" className="navigation__button">
+				<span className="navigation__icon">&nbsp;</span>
+			</label>
+			<div class="navigation__background">&nbsp;</div>
+			<nav className='navigation__nav'>
+				<ul className='navigation__list'>
+					<li className='navigation__item'><NavLink to='/shop' className={({ isActive }) => isActive ? "navigation__link navigation__link--active" : "navigation__link"}>Home</NavLink></li>
+					<li className='navigation__item'><NavLink to='/listen' className={({ isActive }) => isActive ? "navigation__link navigation__link--active" : "navigation__link"}>Listen</NavLink></li>
+					<li className='navigation__item'><NavLink to='/events' className={({ isActive }) => isActive ? "navigation__link navigation__link--active" : "navigation__link"}>Events</NavLink></li>
+					<li className='navigation__item'><NavLink to='/contacts' className={({ isActive }) => isActive ? "navigation__link navigation__link--active" : "navigation__link"}>Contacts</NavLink></li>
+				</ul>
+			</nav>
+		</div>
+	);
 }
 
 export default memo(Navigation);

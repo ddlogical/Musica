@@ -1,0 +1,42 @@
+@import '../../../styles/variables.scss';
+
+.footer-bottom {
+    background-color: $color-primary-dark;
+    color: $color-tertiary;
+    padding: 1.2rem;
+
+    &__content {
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navigation-list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__navigation-item {
+        margin-right: 2rem;
+    }
+
+    &__navigation-link {
+        color: $color-tertiary;
+        text-decoration: none;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+	 &__copyright {
+		& span {
+			@media only screen and (max-width: $bp-small) {
+				display: none;
+			}
+		}
+	 }
+}

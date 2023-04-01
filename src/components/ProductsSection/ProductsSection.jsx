@@ -1,6 +1,6 @@
 import "./ProductsSection.scss";
-import ProductsList from '../ProductsList';
-import ProductsTable from "../ProductsTable";
+import ProductsList from './ProductsList';
+import ProductsTable from "./ProductsTable";
 import { ProductsShowContext } from "../../context/ProductsShowContext";
 import ProductsShowSwitcher from "../ProductsShowSwitcher";
 import { useReducer, useMemo } from "react";

@@ -1,0 +1,21 @@
+@import '../../../styles/variables.scss';
+
+.header-bottom {
+    height: 9.6rem;
+
+    // Logo
+    &__logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+        margin-top: 2rem;
+        width: 13.5rem;
+        height: 6rem;
+
+        &-img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    
+}

@@ -1,5 +1,5 @@
 import "./PickedOutSection.scss";
-import PickedOutList from "../PickedOutList/PickedOutList";
+import PickedOutList from "./PickedOutList";
 import { shallowEqual, useSelector } from "react-redux";
 import { memo } from 'react';
 

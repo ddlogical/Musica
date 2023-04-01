@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import '../../styles/variables.scss';
 
 .partners {
 
@@ -12,10 +12,6 @@
         padding: 2.9rem 1.9rem 6rem 1.3rem;
         justify-content: space-around;
         align-items: center;
-    }
-
-    &__list-item {
-    
     }
 
     &__item-img {

@@ -1,0 +1,11 @@
+@import '../../../styles/variables.scss';
+
+.products__table {
+    margin-top: 2rem;
+	 padding: 0 8rem;
+    width: 100%;
+
+	 @media only screen and (max-width: $bp-small) {
+		padding: 0 1rem;
+	 }
+}

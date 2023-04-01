@@ -1,0 +1,19 @@
+@import '../../../../styles/variables.scss';
+
+.products__row {
+	& td:first-child {
+		@media only screen and (max-width: $bp-small) {
+			display: none;
+		}
+	}
+	& td:nth-child(2) {
+		@media only screen and (max-width: $bp-small) {
+			display: none;
+		}
+	}
+	& td:last-child {
+		@media only screen and (max-width: $bp-small) {
+			text-align: center;
+		}
+	}
+}
