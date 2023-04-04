@@ -1,6 +1,6 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import "./CarouselSection.scss";
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
 
 function CarouselSection() {
     return (

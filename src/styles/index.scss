@@ -92,3 +92,8 @@ body {
   gap: 1.5rem;
   align-items: center;
 }
+
+::selection {
+   background-color: $color-secondary;
+   color: $color-primary-white;
+}

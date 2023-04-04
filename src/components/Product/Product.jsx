@@ -15,7 +15,7 @@ function Product(props) {
     const dispatch = useDispatch();
     const pickedOut = useSelector(state => state.store.pickedOut, shallowEqual);
 
-    const { id, isCart, color, imgSrc, name, price, productCode, text } = props;
+    const { id, isCart, color, imgSrc, name, price, productCode, text, active } = props;
 
     const activeProduct = { color, imgSrc, name, price, productCode, text };
 
@@ -61,7 +61,7 @@ function Product(props) {
 
 
     return (
-        <div className='product'>
+        <div className={active ? 'product product--active': 'product'}>
             <img className='product__img' src={imgSrc} alt={`Product ${productCode}`} />
             <div className='product__content'>
                 <h4 className='product__heading'>{name}</h4>
@@ -102,6 +102,7 @@ Product.propTypes = {
     price: PropTypes.string,
     productCode: PropTypes.string.isRequired,
     text: PropTypes.string,
+	 active: PropTypes.bool,
 }
 
 Product.defaultProps = {
@@ -109,7 +110,8 @@ Product.defaultProps = {
     color: '#1e1e20',
     name: 'Some product on sale',
     price: '$0.00',
-    text: 'Some dummy product text'
+    text: 'Some dummy product text',
+	 active: false
 }
 
 export default memo(Product);

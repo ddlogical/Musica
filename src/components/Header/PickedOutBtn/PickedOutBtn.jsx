@@ -1,7 +1,7 @@
 import "./PickedOutBtn.scss";
 import { Link } from "react-router-dom";
-import Icon from '../../Icon';
-import { memo } from 'react';
+import Icon from "../../Icon";
+import { memo } from "react";
 
 function PickedOut() {
 

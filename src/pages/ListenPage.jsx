@@ -1,18 +1,27 @@
 import WelcomeSection from "../components/WelcomeSection";
-import Player from "../components/Player/Player";
+import Modal from "../components/Modal/Modal";
+import MusicSection from "../components/MusicSection";
 
 function ListenPage() {
 
-    return (
+	return (
 
-            <main className='main'>
+		<>
 
-                <WelcomeSection page="listen" text="listen before purchase"/>
+			<main className='main'>
 
-					 <Player />
+				<WelcomeSection page="listen" text="listen before purchase" />
 
-            </main>
-    );
+				<MusicSection />
+
+			</main>
+
+			<Modal header="Add this product to cart?" text="You can add this product to cart or undo adding by closing the window." />
+
+		</>
+
+
+	);
 
 }
 

@@ -1,10 +1,10 @@
-import './BuyForm.scss';
-import { Formik, Form, useField } from 'formik';
-import * as Yup from 'yup';
+import "./BuyForm.scss";
+import { Formik, Form, useField } from "formik";
+import * as Yup from "yup";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
-import { removeAllFromCart } from '../../../store/cartSlice/cartSlice';
+import { removeAllFromCart } from "../../../store/cartSlice/cartSlice";
 import { PatternFormat } from "react-number-format";
-import { memo } from 'react';
+import { memo } from "react";
 
 const TextInput = ({ label, ...props }) => {
 
@@ -12,10 +12,10 @@ const TextInput = ({ label, ...props }) => {
     return (
         <>
             <label htmlFor={props.id || props.name} className='cart-section__buy-label'>{label}</label>
-            <div className='cart-section__buy-content'>
+            <div className="cart-section__buy-content">
                 <input className={`cart-section__buy-input ${meta.touched && meta.error ? 'cart-section__buy-input--invalid' : ''}`} {...field} {...props} />
                 {meta.touched && meta.error ? (
-                    <div className='cart-section__buy-error'>{meta.error}</div>
+                    <div className="cart-section__buy-error">{meta.error}</div>
                 ) : null}
             </div>
 

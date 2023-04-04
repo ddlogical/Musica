@@ -1,7 +1,7 @@
-import { useContext } from 'react';
-import { ProductsShowContext } from '../../context/ProductsShowContext';
-import './ProductsShowSwitcher.scss';
-import { memo } from 'react';
+import { useContext } from "react";
+import { ProductsShowContext } from "../../context/ProductsShowContext";
+import "./ProductsShowSwitcher.scss";
+import { memo } from "react";
 
 function ProductsShowSwitcher() {
 

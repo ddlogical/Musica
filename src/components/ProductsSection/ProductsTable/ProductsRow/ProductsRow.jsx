@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
-import './ProductsRow.scss';
-import Button from '../../../Button/Button';
-import Icon from '../../../Icon';
-import PropTypes from 'prop-types';
+import "./ProductsRow.scss";
+import Button from "../../../Button/Button";
+import Icon from "../../../Icon";
+import PropTypes from "prop-types";
 import { addToPickedOut } from "../../../../store/pickedOutSlice/pickedOutSlice";
 import { removeFromPickedOut } from "../../../../store/pickedOutSlice/pickedOutSlice";
 import { modalVisibleChanged } from "../../../../store/modalVisibleSlice/modalVisibleSlice";
 import { activeProductChanged } from "../../../../store/activeProductSlice/activeProductSlice";
-import { memo } from 'react';
+import { memo } from "react";
 
 function ProductsRow(props) {
 

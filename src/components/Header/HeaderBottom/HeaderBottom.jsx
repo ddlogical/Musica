@@ -1,7 +1,7 @@
 import "./HeaderBottom.scss";
-import Navigation from '../../Navigation';
+import Navigation from "../../Navigation";
 import { Link } from "react-router-dom";
-import { memo } from 'react';
+import { memo } from "react";
 
 function HeaderBottom() {
 

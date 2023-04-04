@@ -1,8 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Navigation.scss";
-// eslint-disable-next-line no-unused-vars
-import NavigationList from "./NavigationList";
-import { memo } from 'react';
+import { memo } from "react";
 
 function Navigation() {
 

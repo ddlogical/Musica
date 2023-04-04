@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.contacts {
+	position: relative;
+	padding: 7.5rem 0 6.2rem 0;
+
+	&__content {
+		grid-column: 1 / -1;
+		grid-row: 1 / 1;
+		display: flex;
+		gap: 2rem;
+	}
+
+	&__left {
+		flex:  1 1 50%;
+		max-width: 50%;
+
+		@media only screen and (max-width: $bp-medium) {
+			display: none;
+		}
+
+		& img {
+			width: 100%;
+			height: auto;
+			border-radius: 3px;
+		}
+		
+	}
+
+	&__right {
+		flex:  1 1 50%;
+	}
+
+	&__common-info {
+		font-size: 1.6rem;
+		margin-bottom: 2rem;
+	}
+
+	&__heading {
+		margin-bottom: 2rem;
+
+		& span {
+			color: $color-secondary;
+		}
+		
+	}
+
+	&__text {
+		&:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	&__phone {
+		font-size: 2rem;
+		&:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+	}
+}

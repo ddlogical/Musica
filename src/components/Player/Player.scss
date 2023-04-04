@@ -2,11 +2,16 @@
 
 .player {
 	background-color: white;
-	width: 25%;
-	margin: -2rem auto 3rem;
+	flex: 1 1 40%;
+	max-width: 40%;
 	border: 0.1px solid black;
 	border-radius: 5px;
 	padding: 1rem 2rem;
+
+	@media only screen and (max-width: $bp-small) {
+		max-width: 60%;
+		margin: 0 auto;
+	}
 
 	&__status {
 		text-align: center;

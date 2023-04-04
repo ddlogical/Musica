@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import { RouterProvider } from "react-router-dom";
-import {  useDispatch } from 'react-redux';
-import { loadGoods } from './store/goodsSlice/goodsSlice';
-import { router } from './routes';
+import {  useDispatch } from "react-redux";
+import { loadGoods } from "./store/goodsSlice/goodsSlice";
+import { router } from "./routes";
 
 function App() {
 

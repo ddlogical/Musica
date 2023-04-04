@@ -1,7 +1,7 @@
 import "./ProductsList.scss";
 import { shallowEqual, useSelector } from "react-redux";
-import Product from '../../Product';
-import { memo } from 'react';
+import Product from "../../Product";
+import { memo } from "react";
 
 function ProductsList() {
 

@@ -1,8 +1,8 @@
 import "./WelcomeSection.scss";
 import { Link } from "react-router-dom";
-import Icon from '../Icon';
-import PropTypes from 'prop-types';
-import { memo } from 'react';
+import Icon from "../Icon";
+import PropTypes from "prop-types";
+import { memo } from "react";
 
 function WelcomeSection({ page, text }) {
 

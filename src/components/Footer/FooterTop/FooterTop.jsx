@@ -1,7 +1,7 @@
 import "./FooterTop.scss";
 import { Link } from "react-router-dom";
-import Icon from '../../Icon/Icon';
-import { memo } from 'react';
+import Icon from "../../Icon/Icon";
+import { memo } from "react";
 
 function FooterTop() {
 	return (

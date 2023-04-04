@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.music {
+    
+    &__content {
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+        padding-bottom: 5rem;
+        position: relative;
+    }
+
+	 &__play {
+		display: flex;
+		align-items: flex-start;
+		gap: 2rem;
+	 }
+
+	 &__privacy {
+		flex: 1 1 60%;
+
+		@media only screen and (max-width: $bp-small) {
+			display: none;
+		}
+	 }
+
+	 &__privacy-heading {
+		margin-bottom: 2rem;
+	 }
+
+	 &__privacy-text {
+		font-size: 1.8rem;
+
+		@media only screen and (max-width: $bp-medium) {
+			font-size: 1.6rem;
+		}
+	 }
+	 &__privacy-text:not(:last-child) {
+		margin-bottom: 1rem;
+	 }
+}

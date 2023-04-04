@@ -4,6 +4,7 @@ import storage from 'redux-persist/lib/storage';
 import goodsReduser from "./goodsSlice/goodsSlice";
 import modalVisibleReducer from "./modalVisibleSlice/modalVisibleSlice";
 import cartReducer from "./cartSlice/cartSlice";
+import audioReducer from "./audioSlice/audioSlice";
 import pickedOutReducer from "./pickedOutSlice/pickedOutSlice";
 import activeProductReducer from "./activeProductSlice/activeProductSlice";
 
@@ -24,7 +25,8 @@ const store = configureStore({
         store: persistedReducer,
         goods: goodsReduser,
         modalVisible: modalVisibleReducer,
-        activeProduct: activeProductReducer
+        activeProduct: activeProductReducer,
+		  musicActiveAlbum: audioReducer,
     },
     middleware: getDefaultMiddleware =>
         getDefaultMiddleware({
@@ -39,7 +41,8 @@ export const setupStore = preloadedState => {
             store: persistedReducer,
             goods: goodsReduser,
             modalVisible: modalVisibleReducer,
-            activeProduct: activeProductReducer
+            activeProduct: activeProductReducer,
+				musicActiveAlbum: audioReducer,
         },
         middleware: getDefaultMiddleware =>
             getDefaultMiddleware({

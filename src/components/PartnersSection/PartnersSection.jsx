@@ -1,5 +1,5 @@
 import "./PartnersSection.scss";
-import { memo } from 'react';
+import { memo } from "react";
 
 function PartnersSection() {
 

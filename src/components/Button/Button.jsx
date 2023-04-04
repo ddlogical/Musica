@@ -1,6 +1,6 @@
-import './Button.scss';
-import PropTypes from 'prop-types';
-import { memo } from 'react';
+import "./Button.scss";
+import PropTypes from "prop-types";
+import { memo } from "react";
 
 function Button(props) {
 
@@ -16,7 +16,7 @@ function Button(props) {
     }
 
     return (
-        <button className='button' style={buttonCustomStyle} onClick={clickHandler}>{text}</button>
+        <button className="button" style={buttonCustomStyle} onClick={clickHandler}>{text}</button>
     );
 }
 

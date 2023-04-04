@@ -5,6 +5,8 @@ import HomePage from "../pages/HomePage";
 import CartRoute from "../pages/CartPage";
 import PickedOutPage from "../pages/PickedOutPage";
 import ListenPage from "../pages/ListenPage";
+import EventsPage from "../pages/EventsPage";
+import ContactsPage from "../pages/ContactsPage";
 
 export const router = createBrowserRouter([
 	{
@@ -31,6 +33,14 @@ export const router = createBrowserRouter([
 			  {
 					path: 'listen',
 					element: <ListenPage />
+			  },
+			  {
+					path: 'events',
+					element: <EventsPage />
+			  },
+			  {
+					path: 'contacts',
+					element: <ContactsPage />
 			  }
 		 ]
 	}

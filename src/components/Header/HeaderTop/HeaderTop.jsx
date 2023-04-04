@@ -1,7 +1,7 @@
 import "./HeaderTop.scss";
-import Cart from '../CartBtn';
-import PickedOut from '../PickedOutBtn';
-import { memo } from 'react';
+import Cart from "../CartBtn";
+import PickedOut from "../PickedOutBtn";
+import { memo } from "react";
 
 function HeaderTop() {
 

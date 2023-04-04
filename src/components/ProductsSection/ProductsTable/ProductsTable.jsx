@@ -1,7 +1,7 @@
 import "./ProductsTable.scss";
 import { shallowEqual, useSelector } from "react-redux";
 import ProductsRow from "./ProductsRow";
-import { memo } from 'react';
+import { memo } from "react";
 
 function ProductsTable() {
 

@@ -1,10 +1,10 @@
 import "./ProductsSection.scss";
-import ProductsList from './ProductsList';
+import ProductsList from "./ProductsList";
 import ProductsTable from "./ProductsTable";
 import { ProductsShowContext } from "../../context/ProductsShowContext";
 import ProductsShowSwitcher from "../ProductsShowSwitcher";
 import { useReducer, useMemo } from "react";
-import { memo } from 'react';
+import { memo } from "react";
 
 function ProductsSection() {
 

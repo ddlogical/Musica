@@ -4,8 +4,11 @@
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba($color-primary-dark, .5);
 
+	 &--active {
+		outline: 3px solid $color-secondary;
+	 }
+
     &__img {
-        border: 1px solid $color-primary-dark;
         width: 100%;
         height: auto;
         border-radius: 5px;
