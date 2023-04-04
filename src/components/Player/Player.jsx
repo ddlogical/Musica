@@ -8,17 +8,17 @@ import { memo } from "react";
 
 const audioTracks = [
 	"audio/Scorpions_Wind_Of_Change.mp3",
-	"audio/Scorpions_Still_Loving_You.mp3",
-	"audio/PR_Not_Listening.mp3",
-	"audio/LP_In_The_End.mp3",
-	"audio/LP_Faint.mp3",
-	"audio/LP_Numb.mp3",
-	"audio/LP_NewDivide.mp3",
-	"audio/BMTH_Can_You_Feel_My_Heart.mp3",
-	"audio/BMTH_Throne.mp3",
-	"audio/PR_Last_Resort.mp3",
-	"audio/S_Comatose.mp3",
-	"audio/S_Monster.mp3",
+	"audio/Scorpions_Wind_Of_Change.mp3",
+	"audio/Scorpions_Wind_Of_Change.mp3",
+	"audio/Scorpions_Wind_Of_Change.mp3",
+	"audio/Scorpions_Wind_Of_Change.mp3",
+	"audio/Scorpions_Wind_Of_Change.mp3",
+	"audio/Scorpions_Wind_Of_Change.mp3",
+	"audio/Scorpions_Wind_Of_Change.mp3",
+	"audio/Scorpions_Wind_Of_Change.mp3",
+	"audio/Scorpions_Wind_Of_Change.mp3",
+	"audio/Scorpions_Wind_Of_Change.mp3",
+	"audio/Scorpions_Wind_Of_Change.mp3",
 ];
 
 function Player() {
