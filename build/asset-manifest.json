@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.37cb3faf.css",
+    "main.js": "/static/js/main.94f8dd65.js",
+    "static/js/845.55c429cf.chunk.js": "/static/js/845.55c429cf.chunk.js",
+    "static/media/Arial-Bold.woff": "/static/media/Arial-Bold.0f72496113227f9e3079.woff",
+    "static/media/Arial-Bold.woff2": "/static/media/Arial-Bold.64cdc6e996af77f4f45c.woff2",
+    "static/media/Arial.woff": "/static/media/Arial.13b906b52a73f47d2f15.woff",
+    "static/media/Arial.woff2": "/static/media/Arial.4e0fcfca4c4ac3617ae4.woff2",
+    "static/media/Oswald-Regular.woff": "/static/media/Oswald-Regular.7f8da1cd05f2191785fd.woff",
+    "static/media/Oswald-ExtraLight.woff": "/static/media/Oswald-ExtraLight.cf9fdb36143b76c2aca0.woff",
+    "static/media/Oswald-Regular.woff2": "/static/media/Oswald-Regular.df70d361e888b20feb8d.woff2",
+    "static/media/Oswald-ExtraLight.woff2": "/static/media/Oswald-ExtraLight.c2a04bae09a9c8fcb4da.woff2",
+    "static/media/HelveticaNeue-Roman.woff": "/static/media/HelveticaNeue-Roman.0247694e510ebe67cce1.woff",
+    "static/media/HelveticaNeue-Medium.woff": "/static/media/HelveticaNeue-Medium.1c5a4d413294b14b36e0.woff",
+    "static/media/HelveticaNeue-Roman.woff2": "/static/media/HelveticaNeue-Roman.d59df5a538d671a54c79.woff2",
+    "static/media/HelveticaNeue-Medium.woff2": "/static/media/HelveticaNeue-Medium.751c19bd96c1fdbe6c88.woff2",
+    "index.html": "/index.html",
+    "main.37cb3faf.css.map": "/static/css/main.37cb3faf.css.map",
+    "main.94f8dd65.js.map": "/static/js/main.94f8dd65.js.map",
+    "845.55c429cf.chunk.js.map": "/static/js/845.55c429cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37cb3faf.css",
+    "static/js/main.94f8dd65.js"
+  ]
+}
